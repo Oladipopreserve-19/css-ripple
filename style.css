@@ -1,0 +1,121 @@
+body{
+height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    overflow: hidden;
+}
+.ripple{
+  width: 400px;
+  height: 400px;
+  margin: 200px auto;
+  position: relative;
+}
+.ripple div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 6px solid rgba(0,0,250,0.2);
+  animation: ripple 1s cubic-bezier(.03,.54,.6,.63) infinite;
+  border-radius: 50%;
+}
+.ripple div:nth-child(2){
+  animation-delay: 2.5s;
+}
+
+@keyframes ripple {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-color: ;
+  }
+  5%{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5.1%{
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  50%{
+     
+  }
+  100%{
+    width: 388px;
+    height: 388px;
+    opacity: 0;
+    border-color: ;
+  }
+}
+ 388px;
+    height: 388px;
+    opacity: 0;
+    border-color: ;
+  }
+}
+
+.ripples{
+  width: 400px;
+  height: 400px;
+  margin: 200px auto;
+  position: absolute;
+}
+.ripples div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 6px solid rgba(0,0,250,0.2);
+  animation: ripples 1s cubic-bezier(.03,.54,.6,.63) infinite;
+  border-radius: 50%;
+}
+.ripples div:nth-child(2){
+  animation-delay: 9.5s;
+}
+
+@keyframes ripples {
+  0%{
+    width: 388px;
+    height: 388px;
+    opacity: 0;
+    border-color: ;
+    border-radius: 100% ;
+  }
+  5%{
+    width: 450px;
+    height: 450px;
+    opacity: 0;
+  }
+  5.1%{
+    width: 480px;
+    height: 480px;
+    opacity: 1;
+  }
+  50%{
+     
+  }
+  99%{
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    border-radius: 100% ;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+ 388px;
+    height: 388px;
+    opacity: 0;
+    border-color: ;
+  }
+}
+
+
+}
